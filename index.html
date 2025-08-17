@@ -7,41 +7,44 @@
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
-    <header>
-      <h1>Welcome to the Welsh name generator</h1>
-    </header>
-    <script src="src/index.js"></script>
+    <div class="container">
+      <header>
+        <h1>Welcome to the Welsh name generator</h1>
+      </header>
+      <script src="src/index.js"></script>
 
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="Please enter the name you would like to generate"
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <input type="submit" />
-      </form>
-      <div>
-        Name will go here
-        <br />
-      </div>
-    </main>
+      <main>
+        <form>
+          <input
+            type="text"
+            placeholder="Please enter the name you would like to generate"
+            autofocus
+            required
+            autocomplete="off"
+            class="instruction"
+          />
+          <input type="submit" class="submit-button" />
+        </form>
+        <div class="name-generated">
+          Name will go here
+          <br />
+        </div>
+      </main>
 
-    <footer>
-      This AI project was coded by
-      <a href="https://github.com/rhimack">Rhian Mackness</a> and
-      <a
-        href="https://github.com/rhimack/welsh-name-generator.git"
-        target="_blank"
-      >
-        is open sourced on GitHub</a
-      >
-      and is hosted on
-      <a href="https://ai-welsh-name-generator.netlify.app/" target="_blank"
-        >Netlify</a
-      >.
-    </footer>
+      <footer>
+        This AI project was coded by
+        <a href="https://github.com/rhimack">Rhian Mackness</a> and
+        <a
+          href="https://github.com/rhimack/welsh-name-generator.git"
+          target="_blank"
+        >
+          is open sourced on GitHub</a
+        >
+        and is hosted on
+        <a href="https://ai-welsh-name-generator.netlify.app/" target="_blank"
+          >Netlify</a
+        >.
+      </footer>
+    </div>
   </body>
 </html>
