@@ -2,7 +2,13 @@ function generateName(event) {
   event.preventDefault();
 
   let nameElement = document.querySelector("#name");
-  nameElement.innerHTML = "Please enter the name you would like to generate";
+
+  new Typewriter("#name", {
+    strings: "name...",
+    autoStart: true,
+    delay: 1,
+    cursor: "",
+  });
 }
 
 let nameFormElement = document.querySelector("#name-form");
