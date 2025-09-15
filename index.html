@@ -5,29 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
-    <title>AI Welsh names generator</title>
+    <title>AI song generator</title>
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
     <div class="container">
       <header>
-        <h1>Welcome to the Welsh name generator</h1>
+        <h1>Welcome to the AI song generator</h1>
       </header>
       <script src="src/index.js"></script>
 
       <main>
-        <form id="name-form">
+        <form id="song-form">
           <input
             type="text"
-            placeholder="Please enter the type of name you would like to generate"
+            placeholder="Please enter the genre of song to generate some lyrics"
             autofocus
             required
             autocomplete="off"
             class="instruction"
+            id="user-instrctions"
           />
           <input type="submit" class="submit-button" />
         </form>
-        <div class="name-generated" id="name">
+        <div class="song-generated" id="song">
           <br />
         </div>
       </main>

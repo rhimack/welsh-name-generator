@@ -1,6 +1,6 @@
-function displayName(response) {
+function displaySong(response) {
   console.log("Name generated");
-  new Typewriter("#name", {
+  new Typewriter("#song", {
     strings: response.data.answer,
     autoStart: true,
     delay: 1,
@@ -8,7 +8,7 @@ function displayName(response) {
   });
 }
 
-function generateName(event) {
+function generateSong(event) {
   event.preventDefault();
 
   let instructionsInput = document.querySelector("#user-instructions");
@@ -20,12 +20,12 @@ function generateName(event) {
   let apiURL =
     "https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}";
 
-  console.log("Generating name");
+  console.log("Generating song");
   console.log(`Prompt: ${prompt}`);
   console.log(`Context: ${context}`);
 
-  axios.get(apiURL).then(displayName);
+  axios.get(apiURL).then(displaySong);
 }
 
-let nameFormElement = document.querySelector("#name-form");
-nameFormElement.addEventListener("submit", generateName);
+let songFormElement = document.querySelector("#name-form");
+songFormElement.addEventListener("submit", generateSong);
